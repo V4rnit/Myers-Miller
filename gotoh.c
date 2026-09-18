@@ -89,3 +89,17 @@ int gotoh(char* A, char* B, int gapOpen, int gapExtend, int misMatch){
 
     return C[m][n];
 }
+
+
+int main(){
+    char A [] = "ABC";
+    char B [] = "ADC";
+    int gapOpen = 0;
+    int gapExtend = 0;
+    int misMatch = 0;
+    scanf("%d %d %d", &gapOpen, &gapExtend, &misMatch);
+    printf("\n");
+    printf("%d", gotoh(A, B, gapOpen, gapExtend, misMatch));
+    printf("\n");
+    return 0;
+}
